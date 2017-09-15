@@ -18,11 +18,17 @@ Use your knowledge of HTTP requests, and jQuery to fetch star wars film informat
 
 ## Tasks
 Make a `GET` request to each endpoint. Grab and append the respective values.
-requested onto the DOM. **Hint:** Test a route and look at what the JSON object that is returned from the API using Postman.
+requested onto the DOM. **Hint:** Test a route to see what the JSON looks like being returned from the API using Postman.
 
 #### Films
 
-Get each film's following values: title, director, episode, producer, opening_crawl, and release date.
+Get each film's following values: 
+ - title
+ - director
+ - episode
+ - producer
+ - opening_crawl
+ - release date.
 
 ##### Functions Needed
 1. Create a function named **```buildHtmlElements(responseData)```**. This is where you will use jQuery to build your HTML elements and dynamically add them to the DOM.
