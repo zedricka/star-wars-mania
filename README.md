@@ -2,7 +2,7 @@
 
 ## Objective
 
-Use your knowledge of HTTP requests, jQuery to fetch star wars film information from an API and render to the browser.
+Use your knowledge of HTTP requests, jQuery to fetch star wars film information from an API and render to the DOM. Use only ES6.
 
 ## Prerequisites
   - Basic knowledge of HTTP requests using jQuery.
@@ -11,49 +11,46 @@ Use your knowledge of HTTP requests, jQuery to fetch star wars film information 
    
 ## Setup
  - Clone repo to local machine.
- - Create index.html and index.js
+ - Create index.js
  - import jQuery library
  - Link scripts to html
  - Sanity check in browser
 
-## Steps
+## Tasks
+Make a `GET` request to each endpoint. Grab and append the respective values.
+requested onto the DOM. **Hint:** Test a route and look at what the JSON object that is returned from the API using Postman.
 
-### Part 1
-1. Build a function that will use jQuery to build your html dynamically when invoked.
-formate should be 
+#### Films
+
+Get each film's following values: title, director, episode, producer, opening_crawl, and release date.
+
+### Functions Needed
+1. Create a function named **```buildHtmlElements(responseData)```**. This is where you will use jQuery to build your HTML elements and dynamically add them to the DOM.
+
+- Example html to build for each film and append to the **`<div class="films"></div>`** container:
+```html
+<div class="film">
+  <h2 class="film-title">FILM TITLE</h2>
+  <p class="film-episode">FILM EPISODE NUMBER</p>
+  <p class="film-director">FILM DIRECTOR NAME</p>
+  <p class="film-release-date">FILM RELEASE DATE</p>
+</div>
+```
+2. 2. Create a function named **```getFilmData(id)```**. This is where you will build your Ajax call to the API passing it the film id ex. ```getFilmData(1)``` should return film data about episode 1.
+
+##### Routes to hit
+1. `/films/1`.
+1. `/films/2`.
+1. `/films/3`.
+1. `/films/4`.
+1. `/films/5`.
+1. `/films/6`.
+1. `/films/7`.
 
 
-### Part II
-
-To complete Part II, fulfill the following requirements:
-1. Open up Unity.
-2. Create a New Project called "Room Maze".
-3. In the Project View, right click on Assets -> Import New Asset.
-4. Find the file for the room you created in Maya.
-5. Click on this scene when it appears in your Project View.
-6. In the Inspector, check off the box ```Generate Colliders```.
-
-### Part III
-
-To complete Part III, fulfill the following requirements:
-1. Create a Sphere by going to the GameObject Menu -> 3D Object -> Sphere
-2. Position this sphere so that it is above the Room scene.
-3. Click on the sphere.
-4. In the Inspector, add a Rigidbody Component.
-
-Resource: https://github.com/junior-devleague/marble-traveller/blob/master/part-2-controls/1-rigid-body.md
-
-5. Add a New Script to this sphere that will allow it to roll on the floor.
-
-Resource: https://github.com/junior-devleague/marble-traveller/blob/master/part-2-controls/2-moving-player.md
-
-6. Have the camera follow the ball as it rolls.
-
-Resource: https://github.com/junior-devleague/marble-traveller/tree/master/part-3-camera
-
-7. Create collectible objects that the sphere can pick up as it rolls!
-
-Resource: https://github.com/junior-devleague/marble-traveller/tree/master/part-4-collectibles
+### Testing
+  - Run HTML in browser. 
+  - Build an event listener on the button, when clicked calls your getFilmData function. If configured functions properly, you should see the results appear on the DOM.
 
 ## Stretch Goals
-1. How can we make our player jump? Add a jumping functionality with the spacebar! Hint: Research Input.GetKeyDown!
+
