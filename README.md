@@ -24,7 +24,7 @@ requested onto the DOM. **Hint:** Test a route and look at what the JSON object 
 
 Get each film's following values: title, director, episode, producer, opening_crawl, and release date.
 
-### Functions Needed
+##### Functions Needed
 1. Create a function named **```buildHtmlElements(responseData)```**. This is where you will use jQuery to build your HTML elements and dynamically add them to the DOM.
 
 - Example html to build for each film and append to the **`<div class="films"></div>`** container:
@@ -53,4 +53,14 @@ Get each film's following values: title, director, episode, producer, opening_cr
   - Build an event listener on the button, when clicked calls your getFilmData function. If configured functions properly, you should see the results appear on the DOM.
 
 ## Stretch Goals
+1. Reformat your ```buildHtmlElements``` function using string templating.
+2. Build more functions to get other film data including characters, planets, vehicles .......
+3. Add simple CSS.
 
+
+## Resources
+[SWAPI](https://swapi.co/documentation#intro)
+[jQuery Ajax](https://api.jquery.com/jQuery.ajax/)
+[jQuery createElement()](https://api.jquery.com/?s=createElement%28%29)
+[jQuery addClass()](https://api.jquery.com/addClass/)
+[jQuery append()](https://api.jquery.com/append/)
