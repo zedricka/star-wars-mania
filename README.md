@@ -61,7 +61,11 @@ Get each film's following values: title, director, episode, producer, opening_cr
 
 ## Resources
 [SWAPI](https://swapi.co/documentation#intro)
+
 [jQuery Ajax](https://api.jquery.com/jQuery.ajax/)
+
 [jQuery createElement()](https://api.jquery.com/?s=createElement%28%29)
+
 [jQuery addClass()](https://api.jquery.com/addClass/)
+
 [jQuery append()](https://api.jquery.com/append/)
