@@ -2,7 +2,7 @@
 
 ## Objective
 
-Use your knowledge of HTTP requests, jQuery to fetch star wars film information from an API and render to the DOM. Use only ES6.
+Use your knowledge of HTTP requests, and jQuery to fetch star wars film information from an API and render to the DOM. Use only ES6.
 
 ## Prerequisites
   - Basic knowledge of HTTP requests using jQuery.
@@ -11,10 +11,10 @@ Use your knowledge of HTTP requests, jQuery to fetch star wars film information 
    
 ## Setup
  - Clone repo to local machine.
- - Create index.js
- - import jQuery library
- - Link scripts to html
- - Sanity check in browser
+ - Create index.js.
+ - import jQuery library.
+ - Link scripts to html.
+ - Sanity check in browser.
 
 ## Tasks
 Make a `GET` request to each endpoint. Grab and append the respective values.
