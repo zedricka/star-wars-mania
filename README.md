@@ -37,7 +37,7 @@ Get each film's following values: title, director, episode, producer, opening_cr
 </div>
 ```
 2. Create a function named **```getFilmData(id)```**. This is where you will build your Ajax call to the API passing it the film id ex. ```getFilmData(1)``` should return film data about episode 1.
-    - **Hint:** You should pass a reference to your ```buildHtmlElements``` somewhere in here.
+    - **Hint:** You should pass a reference to your ```buildHtmlElements``` function somewhere in here.
 
 ##### Routes to hit
 1. `/films/1`.
